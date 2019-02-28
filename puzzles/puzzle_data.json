@@ -1,63 +1,80 @@
-{
-  "puzzle1": {
-    "boardData": [4, 5, 5, 2],
+[
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle2": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle3": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle4": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle5": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle6": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle7": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle8": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle9": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   },
-  "puzzle10": {
-    "boardData": [4, 5, 5, 2],
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
+    "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
+    "startLocation": 2,
+    "solution": 2
+  },
+  {
+    "horizontalLineCount": 4,
+    "verticalLineCount": 5,
     "verticalLines": [[1,3], [2,2], [2,4], [1,3], [1,5]],
     "startLocation": 2,
     "solution": 2
   }
-}
+]
 

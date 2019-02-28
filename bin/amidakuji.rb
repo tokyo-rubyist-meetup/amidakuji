@@ -5,13 +5,13 @@ require "json"
 
 json_file = File.expand_path("../puzzles/puzzle_data.json", __dir__)
 data = JSON.parse(File.read(json_file))
-puzzle_key = data.keys.sample
-puzzle = data[puzzle_key]
+puzzle_number = data.length.sample
 
-puts "working on #{puzzle_key}"
+puts "working on puzzle #{puzzle_number}"
 
 goal_line = Amidakuji.solve(
-  board_data: puzzle["boardData"],
+  horizontal_line_count: puzzle["horizontalLineCount"],
+  vertical_line_count: puzzle["verticalLineCount"],
   vertical_lines: puzzle["verticalLines"],
   start_location: puzzle["startLocation"],
 )
