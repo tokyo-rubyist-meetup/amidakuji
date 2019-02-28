@@ -1,22 +1,20 @@
 #!/usr/bin/env ruby
 
+require_relative "helpers/puzzle_reader"
 require_relative "../lib/amidakuji"
-require "json"
 
-json_file = File.expand_path("../puzzles/puzzle_data.json", __dir__)
-data = JSON.parse(File.read(json_file))
-puzzle_number = data.length.sample
+puzzle = PuzzleReader.new
 
-puts "working on puzzle #{puzzle_number}"
+puts "working on puzzle #{puzzle.puzzle_number}"
 
 goal_line = Amidakuji.solve(
-  horizontal_line_count: puzzle["horizontalSpaceCount"],
-  vertical_line_count: puzzle["verticalSpaceCount"],
-  vertical_lines: puzzle["verticalLines"],
-  start_location: puzzle["startLocation"],
+  horizontal_space_count: puzzle.horizontal_space_count,
+  vertical_space_count: puzzle.vertical_space_count,
+  vertical_lines: puzzle.vertical_lines,
+  start_location: puzzle.start_location,
 )
 
-if goal_line == puzzle["solution"]
+if goal_line == puzzle.solution
   puts "that is the correct answer!"
 else
   puts "you returned #{goal_line}, but that is incorrect"
