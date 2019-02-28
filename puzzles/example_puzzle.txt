@@ -7,11 +7,11 @@ START
 | | |-|
 A B C D
 
-- are vertical lines
+- are horizontal lines
 
-4 horizontal lines
-5 vertical spaces
-5 vertical lines
+4 vertical spaces
+5 horizontal spaces
+5 horizontal lines
 start at 2
 
 4 5 5 2

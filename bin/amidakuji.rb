@@ -10,8 +10,8 @@ puzzle_number = data.length.sample
 puts "working on puzzle #{puzzle_number}"
 
 goal_line = Amidakuji.solve(
-  horizontal_line_count: puzzle["horizontalLineCount"],
-  vertical_line_count: puzzle["verticalLineCount"],
+  horizontal_line_count: puzzle["horizontalSpaceCount"],
+  vertical_line_count: puzzle["verticalSpaceCount"],
   vertical_lines: puzzle["verticalLines"],
   start_location: puzzle["startLocation"],
 )
