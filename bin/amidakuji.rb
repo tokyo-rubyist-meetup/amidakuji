@@ -10,7 +10,7 @@ puts "working on puzzle #{puzzle.puzzle_number}"
 goal_line = Amidakuji.solve(
   horizontal_space_count: puzzle.horizontal_space_count,
   vertical_space_count: puzzle.vertical_space_count,
-  horizontal_lines: _lines: puzzle.horizontal_lines,
+  horizontal_lines: puzzle.horizontal_lines,
   start_location: puzzle.start_location
 )
 

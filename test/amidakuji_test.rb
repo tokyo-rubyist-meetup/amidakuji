@@ -11,7 +11,7 @@ class AmidakujiTest < Minitest::Test
       Amidakuji.solve(
         horizontal_space_count: puzzle.horizontal_space_count,
         vertical_space_count: puzzle.vertical_space_count,
-        vertical_lines: puzzle.vertical_lines,
+        horizontal_lines: puzzle.horizontal_lines,
         start_location: puzzle.start_location,
       )
     )
@@ -23,7 +23,7 @@ class AmidakujiTest < Minitest::Test
       Amidakuji.print_puzzle(
         horizontal_space_count: puzzle.horizontal_space_count,
         vertical_space_count: puzzle.vertical_space_count,
-        vertical_lines: puzzle.vertical_lines,
+        horizontal_lines: puzzle.horizontal_lines,
         start_location: puzzle.start_location,
       )
     )
@@ -35,7 +35,7 @@ class AmidakujiTest < Minitest::Test
       Amidakuji.print_puzzle_solution(
         horizontal_space_count: puzzle.horizontal_space_count,
         vertical_space_count: puzzle.vertical_space_count,
-        vertical_lines: puzzle.vertical_lines,
+        horizontal_lines: puzzle.horizontal_lines,
         start_location: puzzle.start_location,
       )
     )

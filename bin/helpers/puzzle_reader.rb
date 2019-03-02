@@ -4,7 +4,7 @@ class PuzzleReader
   attr_reader :horizontal_space_count, :vertical_space_count, :horizontal_lines, :start_location, :puzzle_number, :solution
 
   def initialize
-    json_file = File.expand_path("../puzzles/puzzle_data.json", __dir__)
+    json_file = File.expand_path("../../puzzles/puzzle_data.json", __dir__)
     data = JSON.parse(File.read(json_file))
 
     @puzzle_number = rand(data.length)
