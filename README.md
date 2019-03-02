@@ -4,7 +4,7 @@ Your goal is to implement a command line program to solve a game of Amidakuji
 
 ## About Amidakuji
 
-Amidakuji is a Japanese game where you create a ladder like board and follow the lines to get to the ened of the board.
+Amidakuji is a Japanese game where you create a ladder like board and follow the lines to get to the end of the board.
 
 ### Basic Rules
 
@@ -66,13 +66,13 @@ XXX | |
 </pre>
 
 ### Implementing a Solution
-Your challenge is to create a program that will be data about the board and then can
+Your challenge is to create a program that will be passed data about the board and then can
 tell you which output belongs to which input. A starter class is provided in lib/amadakuji
-with a method that takes the following parameters
+with a solve method that takes the following parameters
 <pre>
 horizontal_space_count:, vertical_space_count:, horizontal_lines:, start_location:
 </pre>
-There parameters correspond to information about the board as described in the below diagram.
+These parameters correspond to information about the board as described in the diagram below.
 <pre>
 START
 1 2 3 4
@@ -100,7 +100,7 @@ Amidakuji.solve(horizontal_space_count:....)
 </pre>
 
 ### Using the challenge runner
-There is a challenge located in bin/amidakuji that will load data from a json file located in ./puzzles 
+There is a challenge runner located in bin/amidakuji that will load data from a json file located in ./puzzles 
 and pass them to your method.
 You can invoke the runner with the following command.
 <pre>
