@@ -102,10 +102,18 @@ Amidakuji.solve(horizontal_space_count:....)
 ### Using the challenge runner
 There is a challenge located in bin/amidakuji that will load data from a json file located in ./puzzles 
 and pass them to your method.
+You can invoke the runner with the following command.
+<pre>
+ruby ./bin/amidakuji.rb
+</pre>
 
 ### Tests
 There are also tests that you can use to to check that your solutions work. They are located in ./tests
 and use minitest (therefore you will have to run bundle install) to run the tests.
+You can run the tests with the following command.
+<pre>
+ruby ./test/amidakuji_test.rb
+</pre>
 
 ## BONUS!
 If you implement the amidakuji challenge quickly, you can also attempt to output a ascii art representation of 
