@@ -93,7 +93,7 @@ board and start location
 
 ### Using the challenge runner
 
-There is a challenge runner located in bin/amidakuji that will load data from a json file located in ./puzzles
+There is a challenge runner located in bin/amidakuji that will load data from files located in ./puzzles
 and pass them to your method.
 
 You can invoke the runner with the following command.

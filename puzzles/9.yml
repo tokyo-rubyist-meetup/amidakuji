@@ -1,0 +1,17 @@
+width: 7
+height: 3
+horizontalLines: [[1,1], [1,2], [2,3], [3,2], [4,1], [4,3], [5,2], [6,1]]
+startLocation: 3
+solution: 5
+board: |
+  1 2 3 4 5 6 7
+  |-| | |-| |-|
+  |-| |-| |-| |
+  | |-| |-| | |
+  1 2 3 4 5 6 7
+boardWithSolution: |
+  1 2 3 4 5 6 7
+  |-| x |-| |-|
+  |-| xxx |-| |
+  | |-| xxx | |
+  1 2 3 4 5 6 7

@@ -19,9 +19,12 @@ class Amidakuji::PuzzleReader
   end
 
   def initialize
-    yaml_file = File.expand_path("../../puzzles/puzzle_data.yml", __dir__)
-    data = YAML.load_file(yaml_file)
-    @puzzles = data.map {|number, puzzle_data| PuzzleData.new(number, puzzle_data)}
+    yaml_files = File.expand_path("../../puzzles/*.yml", __dir__)
+    @puzzles = Dir[yaml_files].map do |yaml_file|
+      number = File.basename(yaml_file, ".yml")
+      data = YAML.load_file(yaml_file)
+      PuzzleData.new(number, data)
+    end
   end
 
   def random
