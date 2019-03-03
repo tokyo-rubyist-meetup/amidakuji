@@ -10,8 +10,8 @@ class AmidakujiTest < Minitest::Test
     define_method "test_solve_#{puzzle.number}" do
       assert_equal(puzzle.solution,
         Amidakuji.solve(
-          horizontal_space_count: puzzle.horizontal_space_count,
-          vertical_space_count: puzzle.vertical_space_count,
+          width: puzzle.width,
+          height: puzzle.height,
           horizontal_lines: puzzle.horizontal_lines,
           start_location: puzzle.start_location,
         )
@@ -21,8 +21,8 @@ class AmidakujiTest < Minitest::Test
     define_method "test_print_puzzle_#{puzzle.number}" do
       assert_equal(puzzle.board,
         Amidakuji.print_puzzle(
-          horizontal_space_count: puzzle.horizontal_space_count,
-          vertical_space_count: puzzle.vertical_space_count,
+          width: puzzle.width,
+          height: puzzle.height,
           horizontal_lines: puzzle.horizontal_lines,
           start_location: puzzle.start_location,
         )
@@ -32,8 +32,8 @@ class AmidakujiTest < Minitest::Test
     define_method "test_print_puzzle_solution_#{puzzle.number}" do
       assert_equal(puzzle.board_with_solution,
         Amidakuji.print_puzzle_solution(
-          horizontal_space_count: puzzle.horizontal_space_count,
-          vertical_space_count: puzzle.vertical_space_count,
+          width: puzzle.width,
+          height: puzzle.height,
           horizontal_lines: puzzle.horizontal_lines,
           start_location: puzzle.start_location,
         )

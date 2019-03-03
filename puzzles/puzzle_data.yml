@@ -1,6 +1,6 @@
 1:
-  horizontalSpaceCount: 5
-  verticalSpaceCount: 5
+  width: 5
+  height: 5
   horizontalLines: [[1,1], [2,4], [3,3], [3,5], [4,2], [4,4]]
   startLocation: 5
   solution: 2
@@ -21,8 +21,8 @@
     | x |-| |
     1 2 3 4 5
 2:
-  horizontalSpaceCount: 4
-  verticalSpaceCount: 5
+  width: 4
+  height: 5
   horizontalLines: [[1,3], [2,2], [2,4], [3,3], [3,5]]
   startLocation: 2
   solution: 3
@@ -43,8 +43,8 @@
     | | xxx
     1 2 3 4
 3:
-  horizontalSpaceCount: 3
-  verticalSpaceCount: 5
+  width: 3
+  height: 5
   horizontalLines: [[1,1], [1,4], [2,5]]
   startLocation: 1
   solution: 1
@@ -65,8 +65,8 @@
     x |-|
     1 2 3
 4:
-  horizontalSpaceCount: 6
-  verticalSpaceCount: 4
+  width: 6
+  height: 4
   horizontalLines: [[1,1], [2,3], [3,1], [3,4], [5,4]]
   startLocation: 5
   solution: 6
@@ -85,8 +85,8 @@
     | | |-| | x
     1 2 3 4 5 6
 5:
-  horizontalSpaceCount: 7
-  verticalSpaceCount: 4
+  width: 7
+  height: 4
   horizontalLines: [[1,3], [3,2], [3,4], [4,1], [5,3], [6,4]]
   startLocation: 4
   solution: 7
@@ -105,8 +105,8 @@
     | | |-| | xxx
     1 2 3 4 5 6 7
 6:
-  horizontalSpaceCount: 4
-  verticalSpaceCount: 6
+  width: 4
+  height: 6
   horizontalLines: [[1,2], [1,3], [1,6], [2,1], [2,3], [2,5],[3,4],[3,6]]
   startLocation: 3
   solution: 3
@@ -129,8 +129,8 @@
     |-| xxx
     1 2 3 4
 7:
-  horizontalSpaceCount: 6
-  verticalSpaceCount: 4
+  width: 6
+  height: 4
   horizontalLines: [[1,1], [1,3], [2,4], [3,3], [4,2],[5,3]]
   startLocation: 5
   solution: 2
@@ -149,8 +149,8 @@
     | xxx | | |
     1 2 3 4 5 6
 8:
-  horizontalSpaceCount: 4
-  verticalSpaceCount: 5
+  width: 4
+  height: 5
   horizontalLines: [[1,3], [2,2], [2,4], [3,5]]
   startLocation: 2
   solution: 2
@@ -171,8 +171,8 @@
     | x |-|
     1 2 3 4
 9:
-  horizontalSpaceCount: 7
-  verticalSpaceCount: 3
+  width: 7
+  height: 3
   horizontalLines: [[1,1], [1,2], [2,3], [3,2], [4,1], [4,3], [5,2], [6,1]]
   startLocation: 3
   solution: 5

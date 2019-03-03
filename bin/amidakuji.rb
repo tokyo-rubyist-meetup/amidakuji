@@ -10,8 +10,8 @@ puts "working on puzzle #{puzzle.number}"
 case ARGV[0]
 when "--print-puzzle"
   puzzle_output = Amidakuji.print_puzzle(
-    horizontal_space_count: puzzle.horizontal_space_count,
-    vertical_space_count: puzzle.vertical_space_count,
+    width: puzzle.width,
+    height: puzzle.height,
     horizontal_lines: puzzle.horizontal_lines,
     start_location: puzzle.start_location
   )
@@ -25,8 +25,8 @@ when "--print-puzzle"
   end
 when "--print-puzzle-solution"
   puzzle_output = Amidakuji.print_puzzle_solution(
-    horizontal_space_count: puzzle.horizontal_space_count,
-    vertical_space_count: puzzle.vertical_space_count,
+    width: puzzle.width,
+    height: puzzle.height,
     horizontal_lines: puzzle.horizontal_lines,
     start_location: puzzle.start_location
   )
@@ -40,8 +40,8 @@ when "--print-puzzle-solution"
   end
 else
   goal_line = Amidakuji.solve(
-    horizontal_space_count: puzzle.horizontal_space_count,
-    vertical_space_count: puzzle.vertical_space_count,
+    width: puzzle.width,
+    height: puzzle.height,
     horizontal_lines: puzzle.horizontal_lines,
     start_location: puzzle.start_location
   )

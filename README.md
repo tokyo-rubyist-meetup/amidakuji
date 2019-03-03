@@ -65,31 +65,30 @@ Your challenge is to create a program that will be passed data about the board a
 tell you which output belongs to which input. A starter class is provided in lib/amadakuji
 with a solve method that takes the following parameters
 
-    horizontal_space_count:, vertical_space_count:, horizontal_lines:, start_location:
+    width:, height:, horizontal_lines:, start_location:
 
 These parameters correspond to information about the board as described in the diagram below.
 
     START
     1 2 3 4
-    | | |-| 1 space
-    | |-| | 2 space
-    |-| | | ...     <<< this horizontal line is represented as 1 3
-    | |-| |
-    | | |-|
+    | | |-| 1st row
+    | |-| | 2nd row
+    |-| | | 3rd row <<< horizontal line is represented as 1 3
+    | |-| | 4th row
+    | | |-| 5th row
     1 2 3 4
 
     - are horizontal lines
 
-    4 vertical spaces
-    5 horizontal spaces
-    5 horizontal lines as described in the below array
-    [[1,3], [2,2], [2,4], [3,1], [3, 5]]
-    start at 2
+    width: 4
+    height: 5
+    horizontal_lines: [[1,3], [2,2], [2,4], [3,1], [3, 5]]
+    start_location: 2
 
 The implemented method should return an integer that is the output from the given
 board and start location
 
-    Amidakuji.solve(horizontal_space_count:....)
+    Amidakuji.solve(width:....)
     => 3
 
 ### Using the challenge runner
