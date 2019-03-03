@@ -110,6 +110,14 @@ You can run the tests with the following command.
 
     ruby ./test/amidakuji_test.rb
 
+If you want to run a specific test, you can do it with
+
+    ruby ./test/amidakuji_test.rb -n test_solve_1
+
+If you want to run all tests matching a pattern, you can do it with
+
+    ruby ./test/amidakuji_test.rb -n /test_solve/
+
 ## BONUS!
 
 If you implement the amidakuji challenge quickly, you can also attempt to output a ascii art representation of
