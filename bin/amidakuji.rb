@@ -3,9 +3,11 @@
 require_relative "../lib/amidakuji"
 require_relative "../lib/amidakuji/puzzle_reader"
 
-puzzle = Amidakuji::PuzzleReader.new
+puzzles = Amidakuji::PuzzleReader.new.puzzles
+puzzle_number = rand(puzzles.length)
+puzzle = puzzles[puzzle_number]
 
-puts "working on puzzle #{puzzle.puzzle_number}"
+puts "working on puzzle #{puzzle_number}"
 
 goal_line = Amidakuji.solve(
   horizontal_space_count: puzzle.horizontal_space_count,
