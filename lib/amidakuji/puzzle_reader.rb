@@ -4,7 +4,7 @@ class Amidakuji::PuzzleReader
   attr_reader :puzzles
 
   class PuzzleData
-    attr_reader :number, :horizontal_space_count, :vertical_space_count, :horizontal_lines, :start_location, :solution, :board, :boardWithSolution
+    attr_reader :number, :horizontal_space_count, :vertical_space_count, :horizontal_lines, :start_location, :solution, :board, :board_with_solution
 
     def initialize(number, data)
       @number = number
@@ -14,7 +14,7 @@ class Amidakuji::PuzzleReader
       @start_location = data["startLocation"]
       @solution = data["solution"]
       @board = data["board"]
-      @boardWithSolution = data["boardWithSolution"]
+      @board_with_solution = data["boardWithSolution"]
     end
   end
 

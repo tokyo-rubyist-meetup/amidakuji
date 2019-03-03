@@ -33,7 +33,7 @@ when "--print-puzzle-solution"
 
   puts puzzle_output
 
-  if puzzle_output == puzzle.boardWithSolution
+  if puzzle_output == puzzle.board_with_solution
     puts "that is the correct answer!"
   else
     puts "the board does not look correct"
