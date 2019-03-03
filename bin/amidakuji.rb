@@ -10,7 +10,7 @@ puzzle = puzzles[puzzle_number]
 puts "working on puzzle #{puzzle_number}"
 
 case ARGV[0]
-when "--print_puzzle"
+when "--print-puzzle"
   puzzle_output = Amidakuji.print_puzzle(
     horizontal_space_count: puzzle.horizontal_space_count,
     vertical_space_count: puzzle.vertical_space_count,
@@ -25,7 +25,7 @@ when "--print_puzzle"
   else
     puts "the board does not look correct"
   end
-when "--print_puzzle_solution"
+when "--print-puzzle-solution"
   puzzle_output = Amidakuji.print_puzzle_solution(
     horizontal_space_count: puzzle.horizontal_space_count,
     vertical_space_count: puzzle.vertical_space_count,
