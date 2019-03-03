@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require_relative "helpers/puzzle_reader"
 require_relative "../lib/amidakuji"
+require_relative "../lib/amidakuji/puzzle_reader"
 
-puzzle = PuzzleReader.new
+puzzle = Amidakuji::PuzzleReader.new
 
 puts "working on puzzle #{puzzle.puzzle_number}"
 

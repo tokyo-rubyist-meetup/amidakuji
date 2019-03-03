@@ -1,12 +1,12 @@
 require "minitest/autorun"
 
 require_relative "../lib/amidakuji"
-require_relative "../bin/helpers/puzzle_reader"
+require_relative "../lib/amidakuji/puzzle_reader"
 
 
 class AmidakujiTest < Minitest::Test
   def test_solve
-    puzzle = PuzzleReader.new
+    puzzle = Amidakuji::PuzzleReader.new
     assert_equal(puzzle.solution,
       Amidakuji.solve(
         horizontal_space_count: puzzle.horizontal_space_count,

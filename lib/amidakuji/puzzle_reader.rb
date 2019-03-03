@@ -1,6 +1,6 @@
 require "json"
 
-class PuzzleReader
+class Amidakuji::PuzzleReader
   attr_reader :horizontal_space_count, :vertical_space_count, :horizontal_lines, :start_location, :puzzle_number, :solution
 
   def initialize
