@@ -19,8 +19,8 @@ A board consists of a number of vertical lines with horizontal lines cutting acr
 1 2 3 4
 </pre>
 
-A player selects a starting point at the top of the board and follows the line down to the 
-bottom. As they follow the line, they will cross over to another vertical line if they 
+A player selects a starting point at the top of the board and follows the line down to the
+bottom. As they follow the line, they will cross over to another vertical line if they
 run into a horizontal line.
 
 <pre>
@@ -81,7 +81,7 @@ START
 |-| | | ...     <<< this horizontal line is represented as 1 3
 | |-| |
 | | |-|
-1 2 3 4 
+1 2 3 4
 
 - are horizontal lines
 
@@ -95,12 +95,12 @@ start at 2
 The implemented method should return an integer that is the output from the given
 board and start location
 <pre>
-Amidakuji.solve(horizontal_space_count:....) 
+Amidakuji.solve(horizontal_space_count:....)
 => 3
 </pre>
 
 ### Using the challenge runner
-There is a challenge runner located in bin/amidakuji that will load data from a json file located in ./puzzles 
+There is a challenge runner located in bin/amidakuji that will load data from a json file located in ./puzzles
 and pass them to your method.
 You can invoke the runner with the following command.
 <pre>
@@ -116,7 +116,7 @@ ruby ./test/amidakuji_test.rb
 </pre>
 
 ## BONUS!
-If you implement the amidakuji challenge quickly, you can also attempt to output a ascii art representation of 
+If you implement the amidakuji challenge quickly, you can also attempt to output a ascii art representation of
 what the board looks like from the data.
 
 <pre>
@@ -129,7 +129,7 @@ output:
 1 2 3 4
 </pre>
 
-If you finish that quickly as well try and output a version that 
+If you finish that quickly as well try and output a version that
 
 <pre>
 starting at 2
