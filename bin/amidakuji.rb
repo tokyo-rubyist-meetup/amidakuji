@@ -12,8 +12,7 @@ when "--print-puzzle"
   puzzle_output = Amidakuji.puzzle_as_string(
     width: puzzle.width,
     height: puzzle.height,
-    horizontal_lines: puzzle.horizontal_lines,
-    start_location: puzzle.start_location
+    horizontal_lines: puzzle.horizontal_lines
   )
 
   puts puzzle_output

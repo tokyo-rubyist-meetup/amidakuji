@@ -4,7 +4,7 @@ module Amidakuji
     1
   end
 
-  def self.puzzle_as_string(width:, height:, horizontal_lines:, start_location:)
+  def self.puzzle_as_string(width:, height:, horizontal_lines:)
     # TODO: implement me!
     "1 2 3 4 5\n|-| | | |\n| | | |-|\n| | |-| |\n| |-| |-|\n| | |-| |\n1 2 3 4 5\n"
   end
