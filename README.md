@@ -61,9 +61,15 @@ This continues until the player follows the lines to the end of the board.
 
 ### Implementing a Solution
 
-Your challenge is to create a program that will be passed data about the board and then can
-tell you which output belongs to which input. A starter class is provided in lib/amadakuji
-with a solve method that takes the following parameters
+Your challenge is to create a program that is given the description of an amadakuji, displays that amadakuji visually as ascii art, and calculates which output is selected by the amadakuji given an input.
+
+We've already created a small command line program for you at:
+
+    ./bin/amidakuji.rb
+
+This program makes calls to functions in `lib/amadakuji.rb`, which you'll need to implement.
+
+These functions are passed data about a given board with the following parameters:
 
     width:, height:, horizontal_lines:, start_location:
 
@@ -83,22 +89,8 @@ These parameters correspond to information about the board as described in the d
     width: 4
     height: 5
     horizontal_lines: [[1,3], [2,2], [2,4], [3,1], [3, 5]]
-    start_location: 2
 
-The implemented method should return an integer that is the output from the given
-board and start location
-
-    Amidakuji.solve(width:....)
-    => 3
-
-### Using the challenge runner
-
-There is a challenge runner located in bin/amidakuji that will load data from files located in ./puzzles
-and pass them to your method.
-
-You can invoke the runner with the following command.
-
-    ruby ./bin/amidakuji.rb
+For the above board, given a start_location of 1, the solution would be 4.
 
 ### Tests
 
@@ -117,26 +109,10 @@ If you want to run all tests matching a pattern, you can do it with
 
     ruby ./test/amidakuji_test.rb -n /test_solve/
 
-## BONUS!
+### Strategy
 
-If you implement the amidakuji challenge quickly, you can also attempt to output a ascii art representation of
-what the board looks like from the data.
+There are three distinct functions to implement for this challenge. Given time constraints, you most likely won't be able to implement all of them. Though the order is up to you, we recommend doing it in the following order
 
-    output:
-    1 2 3 4
-    | |-| |
-    |-| | |
-    | |-| |
-    | | |-|
-    1 2 3 4
-
-If you finish that quickly as well try and output a version that
-
-    starting at 2
-    output:
-    1 2 3 4
-    | XXX |
-    |-| X |
-    | XXX |
-    | X |-|
-    1 2 3 4
+1. Amidakuji.puzzle_as_string
+2. Amidakuji.solve
+3. Amidakuji.solution_as_string

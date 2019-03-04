@@ -4,50 +4,31 @@ require_relative "../lib/amidakuji"
 require_relative "../lib/amidakuji/puzzle_reader"
 
 puzzle = Amidakuji::PuzzleReader.new.random
+puts "Choose a number between 1 and #{puzzle.width}:"
+start_location = gets.chomp.to_i
 
-puts "working on puzzle #{puzzle.number}"
+puts "The amidakuji has a height of #{puzzle.height}, and lines represented by #{puzzle.horizontal_lines.inspect}."
 
-case ARGV[0]
-when "--print-puzzle"
-  puzzle_output = Amidakuji.puzzle_as_string(
-    width: puzzle.width,
-    height: puzzle.height,
-    horizontal_lines: puzzle.horizontal_lines
-  )
+puts "It looks like:"
+puzzle_output = Amidakuji.puzzle_as_string(
+  width: puzzle.width,
+  height: puzzle.height,
+  horizontal_lines: puzzle.horizontal_lines
+)
+puts puzzle_output || "UNIMPLEMENTED"
 
-  puts puzzle_output
-
-  if puzzle_output == puzzle.board
-    puts "that is the correct answer!"
-  else
-    puts "the board does not look correct"
-  end
-when "--print-puzzle-solution"
-  puzzle_output = Amidakuji.solution_as_string(
-    width: puzzle.width,
-    height: puzzle.height,
-    horizontal_lines: puzzle.horizontal_lines,
-    start_location: puzzle.start_location
-  )
-
-  puts puzzle_output
-
-  if puzzle_output == puzzle.board_with_solution
-    puts "that is the correct answer!"
-  else
-    puts "the board does not look correct"
-  end
-else
-  goal_line = Amidakuji.solve(
-    width: puzzle.width,
-    height: puzzle.height,
-    horizontal_lines: puzzle.horizontal_lines,
-    start_location: puzzle.start_location
-  )
-
-  if goal_line == puzzle.solution
-    puts "that is the correct answer!"
-  else
-    puts "you returned #{goal_line}, but that is incorrect"
-  end
-end
+goal_line = Amidakuji.solve(
+  width: puzzle.width,
+  height: puzzle.height,
+  horizontal_lines: puzzle.horizontal_lines,
+  start_location: puzzle.start_location
+)
+puts "Given your starting location of #{start_location}, the final position is #{goal_line || "UNIMPLEMENTED"}."
+puts "The path taken looks like:"
+puzzle_output = Amidakuji.solution_as_string(
+  width: puzzle.width,
+  height: puzzle.height,
+  horizontal_lines: puzzle.horizontal_lines,
+  start_location: puzzle.start_location
+)
+puts puzzle_output || "UNIMPLEMENTED"
