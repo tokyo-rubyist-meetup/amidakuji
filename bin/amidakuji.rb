@@ -9,7 +9,7 @@ puts "working on puzzle #{puzzle.number}"
 
 case ARGV[0]
 when "--print-puzzle"
-  puzzle_output = Amidakuji.print_puzzle(
+  puzzle_output = Amidakuji.puzzle_as_string(
     width: puzzle.width,
     height: puzzle.height,
     horizontal_lines: puzzle.horizontal_lines,
@@ -24,7 +24,7 @@ when "--print-puzzle"
     puts "the board does not look correct"
   end
 when "--print-puzzle-solution"
-  puzzle_output = Amidakuji.print_puzzle_solution(
+  puzzle_output = Amidakuji.solution_as_string(
     width: puzzle.width,
     height: puzzle.height,
     horizontal_lines: puzzle.horizontal_lines,

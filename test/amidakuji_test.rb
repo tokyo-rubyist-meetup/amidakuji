@@ -18,9 +18,9 @@ class AmidakujiTest < Minitest::Test
       )
     end
 
-    define_method "test_print_puzzle_#{puzzle.number}" do
+    define_method "test_puzzle_as_string_#{puzzle.number}" do
       assert_equal(puzzle.board,
-        Amidakuji.print_puzzle(
+        Amidakuji.puzzle_as_string(
           width: puzzle.width,
           height: puzzle.height,
           horizontal_lines: puzzle.horizontal_lines,
@@ -29,9 +29,9 @@ class AmidakujiTest < Minitest::Test
       )
     end
 
-    define_method "test_print_puzzle_solution_#{puzzle.number}" do
+    define_method "test_solution_as_string_#{puzzle.number}" do
       assert_equal(puzzle.board_with_solution,
-        Amidakuji.print_puzzle_solution(
+        Amidakuji.solution_as_string(
           width: puzzle.width,
           height: puzzle.height,
           horizontal_lines: puzzle.horizontal_lines,
